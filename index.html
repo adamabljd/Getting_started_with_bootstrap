@@ -58,8 +58,8 @@
                 <div class="media">
                     <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/uthappizza.png" alt="Uthappizza">
                     <div class="media-body">
-                        <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$4.99</span></h2>
-                        <p class="hidden-xs-down">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                        <h2 class="mt-0">Uthappizza <span class="badge bg-danger">HOT</span> <span class="badge bg-pill bg-secondary">$4.99</span></h2>
+                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
                     </div>
                 </div>
             </div>
@@ -93,6 +93,42 @@
             </div>
         </div>
     </div>
+
+    <div class="row row-content col-sm-8">
+        <div class="card">
+            <h3 class="card-header bg-warning text-white">Reserve a table</h3>
+            <div class="card-body">
+                <form>
+                    <div class="form-group row">
+                        <label for="numberofguests" class="col-md-2 col-form-label">Number of Guests</label>
+                        <div class="col-md-10">
+                            <input type="radio" class="form-check-input" id="1" name="1"><label style="padding-left: 5px; padding-right: 10px;">1</label>
+                            <input type="radio" class="form-check-input" id="2" name="2"><label style="padding-left: 5px; padding-right: 10px;">2</label>
+                            <input type="radio" class="form-check-input" id="3" name="3"><label style="padding-left: 5px; padding-right: 10px;">3</label>
+                            <input type="radio" class="form-check-input" id="4" name="4"><label style="padding-left: 5px; padding-right: 10px;">4</label>
+                            <input type="radio" class="form-check-input" id="5" name="5"><label style="padding-left: 5px; padding-right: 10px;">5</label>
+                            <input type="radio" class="form-check-input" id="6" name="6"><label style="padding-left: 5px; padding-right: 10px;">6</label>
+                        </div>
+                    </div>
+                    <div class="form-group row" style="padding-top: 5%;">
+                        <label for="dateandtime" class="col-12 col-md-2 col-form-label">Date and Time</label>
+                        <div class="col-5 col-md-3">
+                            <input type="date" class="form-control" id="date" name="date" placeholder="Date">
+                        </div>
+                        <div class="col-7 col-md-7">
+                            <input type="time" class="form-control" id="time" name="time" placeholder="Time">
+                        </div>
+                    </div>
+                    <div class="form-group row" style="padding-top: 5%;">
+                        <div class="offset-md-2 col-md-10">
+                            <button type="submit" class="btn btn-primary">Reserve</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
     </div>
 
     <footer class="footer align-self-center">
