@@ -43,6 +43,7 @@
                 </div>
                 <div class="col-12 col-sm align-self-center">
                     <img src="img/logo.png" class="img-fluid">
+                    <button class="btn btn-warning" type="button" href="#form">Reserve Table</button>
                 </div>
             </div>
         </div>
@@ -51,7 +52,7 @@
 
     <div class="container">
         <div class="row row-content align-items-center">
-            <div class="col-sm-4 col-md order-sm-last">
+            <div class="col-sm-4 col-md-4 order-sm-last">
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
             <div class="col col-sm col-md order-sm-first">
@@ -64,67 +65,73 @@
                 </div>
             </div>
         </div>
-    </div>
 
 
-    <div class="row row-content align-items-center">
-        <div class="col-12 col-sm-4 col-md-3">
-            <h3>This Month's Promotions</h3>
-        </div>
-        <div class="col col-sm col-md">
-            <h2>Weekend Grand Buffet</h2>
-            <p class=".d-none .d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
-        </div>
-    </div>
 
-    <div class="row row-content align-items-center">
-        <div class="col-12 col-sm-4 order-sm-last col-md-3">
-            <h3>Meet our Culinary Specialists</h3>
-        </div>
-        <div class="col col-sm order-sm-first col-md">
-            <div class="media">
-                <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/alberto.png" alt="Alberto Somayya">
-                <div class="media-body">
-                    <h2 class="mt-0">Alberto Somayya</h2>
-                    <h4>Executive Chef</h4>
-                    <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences.
-                    </p>
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-4 col-md-3">
+                <h3>This Month's Promotions</h3>
+            </div>
+            <div class="col col-sm col-md">
+                <div class="media">
+                    <div class="media-body">
+                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge bg-danger">NEW</span></h2>
+                        <p class=".d-none .d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                    </div>
+                    <img class="d-flex ml-3 img-thumbnail align-self-center" src="img/buffet.png" alt="Buffet">
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="row row-content col-sm-8">
-        <div class="card">
-            <h3 class="card-header bg-warning text-white">Reserve a table</h3>
-            <div class="card-body">
-                <form>
-                    <div class="form-group row">
-                        <label for="numberofguests" class="col-md-2 col-form-label">Number of Guests</label>
-                        <div class="col-md-10">
-                            <input type="radio" class="form-check-input" id="1" name="1"><label style="padding-left: 5px; padding-right: 10px;">1</label>
-                            <input type="radio" class="form-check-input" id="2" name="2"><label style="padding-left: 5px; padding-right: 10px;">2</label>
-                            <input type="radio" class="form-check-input" id="3" name="3"><label style="padding-left: 5px; padding-right: 10px;">3</label>
-                            <input type="radio" class="form-check-input" id="4" name="4"><label style="padding-left: 5px; padding-right: 10px;">4</label>
-                            <input type="radio" class="form-check-input" id="5" name="5"><label style="padding-left: 5px; padding-right: 10px;">5</label>
-                            <input type="radio" class="form-check-input" id="6" name="6"><label style="padding-left: 5px; padding-right: 10px;">6</label>
-                        </div>
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-4 order-sm-last col-md-3">
+                <h3>Meet our Culinary Specialists</h3>
+            </div>
+            <div class="col col-sm order-sm-first col-md">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/alberto.png" alt="Alberto Somayya">
+                    <div class="media-body">
+                        <h2 class="mt-0">Alberto Somayya</h2>
+                        <h4>Executive Chef</h4>
+                        <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences.
+                        </p>
                     </div>
-                    <div class="form-group row" style="padding-top: 5%;">
-                        <label for="dateandtime" class="col-12 col-md-2 col-form-label">Date and Time</label>
-                        <div class="col-5 col-md-3">
-                            <input type="date" class="form-control" id="date" name="date" placeholder="Date">
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-content col-sm-8" id="form">
+            <div class="card">
+                <h3 class="card-header bg-warning text-white">Reserve a table</h3>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group row">
+                            <label for="numberofguests" class="col-md-2 col-form-label">Number of Guests</label>
+                            <div class="col-md-10">
+                                <input type="radio" class="form-check-input" id="1" name="1"><label style="padding-left: 5px; padding-right: 10px;">1</label>
+                                <input type="radio" class="form-check-input" id="2" name="2"><label style="padding-left: 5px; padding-right: 10px;">2</label>
+                                <input type="radio" class="form-check-input" id="3" name="3"><label style="padding-left: 5px; padding-right: 10px;">3</label>
+                                <input type="radio" class="form-check-input" id="4" name="4"><label style="padding-left: 5px; padding-right: 10px;">4</label>
+                                <input type="radio" class="form-check-input" id="5" name="5"><label style="padding-left: 5px; padding-right: 10px;">5</label>
+                                <input type="radio" class="form-check-input" id="6" name="6"><label style="padding-left: 5px; padding-right: 10px;">6</label>
+                            </div>
                         </div>
-                        <div class="col-7 col-md-7">
-                            <input type="time" class="form-control" id="time" name="time" placeholder="Time">
+                        <div class="form-group row" style="padding-top: 5%;">
+                            <label for="dateandtime" class="col-12 col-md-2 col-form-label">Date and Time</label>
+                            <div class="col-5 col-md-3">
+                                <input type="date" class="form-control" id="date" name="date" placeholder="Date">
+                            </div>
+                            <div class="col-7 col-md-7">
+                                <input type="time" class="form-control" id="time" name="time" placeholder="Time">
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group row" style="padding-top: 5%;">
-                        <div class="offset-md-2 col-md-10">
-                            <button type="submit" class="btn btn-primary">Reserve</button>
+                        <div class="form-group row" style="padding-top: 5%;">
+                            <div class="offset-md-2 col-md-10">
+                                <button type="submit" class="btn btn-primary">Reserve</button>
+                            </div>
                         </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
