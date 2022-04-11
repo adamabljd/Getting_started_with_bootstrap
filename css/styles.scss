@@ -67,3 +67,15 @@ body {
     bottom: 0px;
     z-index: 1;
 }
+
+.modal {
+    .modal-content {
+        background: $background-light;
+        .modal-header {
+            background: $background-dark;
+            .modal-title {
+                color: floralwhite;
+            }
+        }
+    }
+}

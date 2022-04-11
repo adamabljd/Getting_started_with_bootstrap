@@ -32,9 +32,8 @@
                 </ul>
 
             </div>
-            <span class="navbar-text">
-                <a data-bs-toggle="modal" data-bs-target="#loginModal">
-                <span class="fa fa-sign-in"></span> Login</a>
+            <span class="navbar-text" id="loginText">
+                <span class="fa fa-sign-in" ></span> Login</a>
             </span>
         </div>
     </nav>
@@ -154,7 +153,9 @@
                 </div>
                 <div class="col-12 col-sm align-self-center">
                     <img src="img/logo.png" class="img-fluid">
-                    <a role="button" class="btn btn-block nav-link btn-warning" data-bs-toggle="modal" data-bs-target="#reserveModal">Reserve Table</a>
+                    <div>
+                        <a role="button" class="btn btn-block nav-link btn-warning" id="reserveBtn">Reserve Table</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -317,6 +318,27 @@
                 $("#carouselButton").children("span").addClass('fa-pause');
             }
         });
+    </script>
+    <script>
+        var loginModal = new bootstrap.Modal(document.getElementById('loginModal'), {
+            keyboard: false
+        })
+
+        // Get the button that opens the modal
+        var loginSpan = document.getElementById("loginText");
+        loginSpan.onclick = function() {
+            loginModal.show();
+        }
+
+        var reserveModal = new bootstrap.Modal(document.getElementById('reserveModal'), {
+            keyboard: false
+        })
+
+        // Get the button that opens the modal
+        var reserveBtn = document.getElementById("reserveBtn");
+        reserveBtn.onclick = function() {
+            reserveModal.show();
+        }
     </script>
 
 </body>
